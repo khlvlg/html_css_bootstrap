@@ -1,0 +1,19 @@
+.dish{
+    font-size: 40px;
+    color: deeppink;
+}
+.menu{
+    font-size: 80px;
+    color: aqua;
+}
+.name{
+    font-size: 25px;
+    color: yellow;
+}
+.drinks{
+    font-size: 25px;
+    color: yellow;
+}
+body {
+    background-image: url("../media/back.png");
+}

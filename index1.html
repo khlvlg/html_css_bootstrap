@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="stylez.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+
+<style>
+    .btn{
+        color: #313133;
+        background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 8px 20px;
+        margin: 0 15px;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease-in-out 0s;
+    }
+.btn:focus,
+.btn:hover{
+    color: #313133;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    transform: translateY(-6px);
+} 
+.btn:before{
+    content: '';
+    min-width: calc(100% + 17px);
+    min-height: calc(100% + 17px);
+    border-radius: 50px;
+    border: 5px solid #00FFCB;
+    box-shadow: 0 0 40px rgba(0,255,203,.7);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease-in-out 0s;
+}
+.btn:hover:before{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+@media only screen and (max-width: 767px){
+    .btn{ margin-bottom: 30px; }
+}
+</style>
+
+<h1 class="header">PARTY CLUB</h1>
+<div class="container">
+    
+    <div class="col-md-6">
+        <a href="buttons_main/menu.html" class="btn btn-lg">MENU</a>
+    </div>
+    <div class="col-md-6">
+        <a href="buttons_main/gallery.html" class="btn btn-lg">GALLERY</a>
+    </div>
+    <div class="col-md-6">
+        <a href="buttons_main/order.html" class="btn btn-lg">ORDER</a>
+    </div>
+</div>
+    <nav class="container">
+        <a href="buttons_main/menu.html">MENU</a>
+        <a href="buttons_main/gallery.html">GALLERY</a>
+        <a href="buttons_main/order.html">ORDER</a>
+    </nav>
+</body>
+</html>
